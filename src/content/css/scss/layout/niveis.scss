@@ -1,0 +1,77 @@
+/** Planos **/
+
+.niveis {
+  background: $cor-planos;
+  
+  h2 {
+    color: #fff;
+  }
+  
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nivel {
+  background: white;
+  width: 18em;
+  padding-bottom: 2em;
+  text-align: center;
+  line-height: .8cm;
+
+  &-silver, &-gold, &-platinum {
+    color: #fff;
+    font-size: 1.8em;
+    background: $cor-padrao;
+    text-align: center;
+    height: 2em;
+    padding-top: .6em;
+    margin-top: 0;
+  }
+  
+  &-silver {
+    background-color: $nivel-silver;
+  }
+
+  &-gold {
+    background-color: $nivel-gold;
+  }
+
+  &-platinum {
+    background-color: $nivel-platinum;
+  }
+}
+
+.itens-plano {
+  padding-left: 1.2em;
+  li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: .5em;
+    width: 14.8em;
+    &:last-child {
+      border: 0;
+    }
+  }
+  span {
+    float: right;
+  }
+}
+
+.icone-check,
+.icone-x {
+  background: url('') no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.icone-check {
+  background-position: -5px -5px;
+}
+
+.icone-x {
+  background-position: -33px -5px;
+}

@@ -1,0 +1,57 @@
+.card {
+    background-color: #f2f2f2;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    transition: .2s ease-out;
+    padding: 1cm;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    &-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        dd{
+            margin-bottom: .3cm;
+        }
+    }
+    
+    &-title {
+        position: absolute;
+        top: 3cm;
+        left: 8cm;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    
+    &-first {
+        margin-top: 4cm;
+    }
+    
+    &-interno {
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        
+        ul {
+            margin-left: 1cm;
+        }
+        
+        &-title {
+            font-weight: 700;
+            margin-bottom: .5cm;
+        }
+        
+        &-body {
+            margin: 15px 0;
+        }
+        
+        &-footer {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
