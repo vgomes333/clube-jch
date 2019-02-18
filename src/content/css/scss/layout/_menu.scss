@@ -1,9 +1,10 @@
 .menu {
     width: 100%;
+    
     &-content {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         list-style: none;
     }
     
@@ -15,6 +16,13 @@
     a {
         cursor: pointer;
         color: #fff;
+        margin-right: .4cm;
+        border-right: 1px solid #fff;
+        padding-right: .4cm;
+
+        &:last-child {
+            border-right: none;
+        }
         
         &:hover {
             text-decoration: none;
@@ -23,12 +31,12 @@
 }
 .sub-menu {
     position: absolute;
-    top: 85px;
+    top: 70px;
     padding-top: .5cm;
-    background: rgba($cor-planos, 0.8);
+    background: rgba(#232323, 0.8);
     left: 0px;
     width: 100%;
-    max-height: 240px;
+    max-height: 270px;
     transition: .2s;
     
     &-items {
@@ -78,6 +86,5 @@
         position: relative;
         width: 100%;
         margin-bottom: 10px;
-    }
-    
+    }    
 }

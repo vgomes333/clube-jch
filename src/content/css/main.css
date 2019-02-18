@@ -471,25 +471,30 @@ th {
   .menu-content {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none; }
   .menu-item {
     text-transform: lowercase;
     font-size: 18px; }
   .menu a {
     cursor: pointer;
-    color: #fff; }
+    color: #fff;
+    margin-right: .4cm;
+    border-right: 1px solid #fff;
+    padding-right: .4cm; }
+    .menu a:last-child {
+      border-right: none; }
     .menu a:hover {
       text-decoration: none; }
 
 .sub-menu {
   position: absolute;
-  top: 85px;
+  top: 70px;
   padding-top: .5cm;
-  background: rgba(30, 44, 53, 0.8);
+  background: rgba(35, 35, 35, 0.8);
   left: 0px;
   width: 100%;
-  max-height: 240px;
+  max-height: 270px;
   transition: .2s; }
   .sub-menu-items {
     text-transform: uppercase;
@@ -589,18 +594,6 @@ th {
     .destaque p:first-child:first-line {
       font-size: 2.2em;
       font-weight: bold; }
-  .destaque button {
-    margin-top: 1em;
-    background: #10569c;
-    border: 0;
-    padding: .6em;
-    font-size: 1.2em;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
-    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    font-weight: bold; }
 
 /** Footer **/
 footer {
@@ -692,22 +685,28 @@ h2 {
 
 /** Header **/
 .header {
-  border-top: 5px solid #10569c;
-  background: rgba(30, 44, 53, 0.8);
-  height: 90px;
+  background: #232323;
+  height: 70px;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  .header-link {
+    position: absolute;
+    left: .7cm; }
+  .header-cobrand {
+    width: 5cm; }
   .header-logo {
-    width: 2cm; }
+    position: absolute;
+    width: 3cm;
+    right: 2cm;
+    top: 1cm; }
   .header-menu {
     color: #fff;
     font-size: 18px; }
     .header-menu a {
-      color: #fff;
-      margin: 0 .6cm; }
+      color: #fff; }
       .header-menu a:hover {
         text-decoration: none; }
 
@@ -766,3 +765,37 @@ h2 {
 
 .icone-x {
   background-position: -33px -5px; }
+
+.regras {
+  text-align: center;
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+  width: 55%; }
+  .regras-title {
+    font-size: 28px; }
+    .regras-title span {
+      font-weight: 900; }
+  .regras-subtitle {
+    font-size: 18px;
+    margin-bottom: .2cm; }
+  .regras-paragrafo1 {
+    margin-bottom: .5cm; }
+  .regras-classificacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1cm; }
+    .regras-classificacao-table {
+      margin-bottom: 1cm; }
+      .regras-classificacao-table-header {
+        color: #0174DF; }
+      .regras-classificacao-table td {
+        font-weight: 700;
+        border: 1px solid #0174DF;
+        padding: 5px 0;
+        width: 6cm; }
+  .regras-beneficios {
+    margin-bottom: 2cm; }
+    .regras-beneficios-table {
+      border: 1px solid #0174DF; }

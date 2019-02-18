@@ -19,14 +19,4 @@
         font-weight: bold;
       }
     }
-    button {
-      margin-top: 1em;
-      background: $cor-padrao;
-      border: 0;
-      padding: .6em;
-      font-size: 1.2em;
-      @include borda-arredondada(50px);
-      @include sombreado;
-      font-weight: bold;
-    }
   }

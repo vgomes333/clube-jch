@@ -1,0 +1,54 @@
+.regras {
+    text-align: center;
+    margin-top: 1cm;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    
+    &-title {
+        font-size: 28px;
+        
+        span {
+            font-weight: 900;
+        }
+    }
+    
+    &-subtitle {
+        font-size: 18px;
+        margin-bottom: .2cm;
+    }
+    
+    &-paragrafo1 {
+        margin-bottom: .5cm;
+    }
+    
+    &-classificacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1cm;
+        
+        &-table {
+            margin-bottom: 1cm;
+            
+            &-header {
+                color: #0174DF;
+            }
+            
+            td {
+                font-weight: 700;
+                border: 1px solid #0174DF;
+                padding: 5px 0;
+                width: 6cm;
+            }
+        }
+    }
+    
+    &-beneficios {
+        margin-bottom: 2cm;
+        
+        &-table {
+            border: 1px solid #0174DF;
+        }
+    }
+}
