@@ -60,3 +60,31 @@ h2 {
   background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
   transition: all 0.2s ease;
 }
+
+.flex-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  &-around {
+    justify-content: space-around;
+  }
+  
+  &-between {
+    justify-content: space-between;
+  }
+  
+  &-evenly {
+    justify-content: space-evenly;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.separator  {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}

@@ -16,10 +16,22 @@
 
 .nivel {
   background: white;
-  width: 18em;
+  width: 24em;
   padding-bottom: 2em;
-  text-align: center;
   line-height: .8cm;
+  text-align: center;
+
+  ul {
+    text-align: left;
+  }
+
+  &-classificacao-gold {
+    min-height: 13cm;
+
+    ul {
+      margin-bottom: 4.7cm;
+    }
+  }
 
   &-silver, &-gold, &-platinum {
     color: #fff;
@@ -42,6 +54,10 @@
   &-platinum {
     background-color: $nivel-platinum;
   }
+}
+
+.nivel-icon {
+  width: 2cm;
 }
 
 .itens-plano {

@@ -1,0 +1,41 @@
+.form-usuario {
+    display: flex;
+    flex-direction: column;
+    
+    &-header {
+        background: black;
+    }
+    
+    &-body {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        
+        input {
+            border-radius: 16px;
+            border: 1px solid #ccc;
+            height: 2em;
+            padding: 0px 0.8em;
+        }
+        
+        select {
+            border-radius: 16px;
+            margin-left: .8em;
+            height: 2em;
+            padding: 0 .8em;
+        }
+        
+        &-title {
+            color: black;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    
+    &-btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 2em;
+    }
+}

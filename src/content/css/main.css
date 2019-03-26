@@ -683,6 +683,25 @@ h2 {
   background-color: hsl(calc(var(--progress) * 1.2), 80%, 50%);
   transition: all 0.2s ease; }
 
+.flex-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .flex-inline-around {
+    justify-content: space-around; }
+  .flex-inline-between {
+    justify-content: space-between; }
+  .flex-inline-evenly {
+    justify-content: space-evenly; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.separator {
+  border-top: 1px solid #eee;
+  padding: 10px 0; }
+
 /** Header **/
 .header {
   background: #232323;
@@ -722,10 +741,16 @@ h2 {
 
 .nivel {
   background: white;
-  width: 18em;
+  width: 24em;
   padding-bottom: 2em;
-  text-align: center;
-  line-height: .8cm; }
+  line-height: .8cm;
+  text-align: center; }
+  .nivel ul {
+    text-align: left; }
+  .nivel-classificacao-gold {
+    min-height: 13cm; }
+    .nivel-classificacao-gold ul {
+      margin-bottom: 4.7cm; }
   .nivel-silver, .nivel-gold, .nivel-platinum {
     color: #fff;
     font-size: 1.8em;
@@ -740,6 +765,9 @@ h2 {
     background-color: #D4AF37; }
   .nivel-platinum {
     background-color: #5882FA; }
+
+.nivel-icon {
+  width: 2cm; }
 
 .itens-plano {
   padding-left: 1.2em; }
@@ -799,3 +827,32 @@ h2 {
     margin-bottom: 2cm; }
     .regras-beneficios-table {
       border: 1px solid #0174DF; }
+
+.form-usuario {
+  display: flex;
+  flex-direction: column; }
+  .form-usuario-header {
+    background: black; }
+  .form-usuario-body {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column; }
+    .form-usuario-body input {
+      border-radius: 16px;
+      border: 1px solid #ccc;
+      height: 2em;
+      padding: 0px 0.8em; }
+    .form-usuario-body select {
+      border-radius: 16px;
+      margin-left: .8em;
+      height: 2em;
+      padding: 0 .8em; }
+    .form-usuario-body-title {
+      color: black;
+      font-weight: 700;
+      font-size: 18px; }
+  .form-usuario-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 2em; }
