@@ -9,7 +9,6 @@
     }
     
     &-item {
-        text-transform: lowercase;
         font-size: 18px;
     }
     
@@ -40,7 +39,6 @@
     transition: .2s;
     
     &-items {
-        text-transform: uppercase;
         color: #fff;
     }
 }

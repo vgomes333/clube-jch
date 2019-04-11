@@ -474,7 +474,6 @@ th {
     justify-content: center;
     list-style: none; }
   .menu-item {
-    text-transform: lowercase;
     font-size: 18px; }
   .menu a {
     cursor: pointer;
@@ -497,7 +496,6 @@ th {
   max-height: 270px;
   transition: .2s; }
   .sub-menu-items {
-    text-transform: uppercase;
     color: #fff; }
 
 .nav-side-menu ul :not(collapsed) .arrow:before,
@@ -702,6 +700,11 @@ h2 {
   border-top: 1px solid #eee;
   padding: 10px 0; }
 
+.modal-center {
+  display: flex;
+  align-items: center;
+  height: 90%; }
+
 /** Header **/
 .header {
   background: #232323;
@@ -745,6 +748,8 @@ h2 {
   padding-bottom: 2em;
   line-height: .8cm;
   text-align: center; }
+  .nivel-icon {
+    width: 8em; }
   .nivel ul {
     text-align: left; }
   .nivel-classificacao-gold {
@@ -765,9 +770,8 @@ h2 {
     background-color: #D4AF37; }
   .nivel-platinum {
     background-color: #5882FA; }
-
-.nivel-icon {
-  width: 2cm; }
+  .nivel-coin {
+    background-color: #ddd; }
 
 .itens-plano {
   padding-left: 1.2em; }

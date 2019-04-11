@@ -20,19 +20,23 @@
   padding-bottom: 2em;
   line-height: .8cm;
   text-align: center;
-
+  
+  &-icon {
+    width: 8em;
+  }
+  
   ul {
     text-align: left;
   }
-
+  
   &-classificacao-gold {
     min-height: 13cm;
-
+    
     ul {
       margin-bottom: 4.7cm;
     }
   }
-
+  
   &-silver, &-gold, &-platinum {
     color: #fff;
     font-size: 1.8em;
@@ -46,18 +50,18 @@
   &-silver {
     background-color: $nivel-silver;
   }
-
+  
   &-gold {
     background-color: $nivel-gold;
   }
-
+  
   &-platinum {
     background-color: $nivel-platinum;
   }
-}
-
-.nivel-icon {
-  width: 2cm;
+  
+  &-coin {
+    background-color: #ddd;
+  }
 }
 
 .itens-plano {
